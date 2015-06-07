@@ -89,7 +89,7 @@
         "src/cpp/server/*.{h,cc}",
         "src/cpp/util/*.{h,cc}",
         "include/grpc++/*.h",
-        "include/grpc++/**/*.h",
+        "include/grpc++/**/*.h"
       ],
       "dependencies": {
         "gRPC-cpp/GRPCClient": [
