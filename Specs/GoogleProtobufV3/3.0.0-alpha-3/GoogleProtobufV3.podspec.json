@@ -28,7 +28,8 @@
     "src/**/compiler/java/**",
     "src/**/compiler/**",
     "src/**/*unittest*",
-    "src/**/*test_util*"
+    "src/**/*test*",
+    "src/*.pb.{h,cc}"
   ],
   "header_mappings_dir": "src",
   "preserve_paths": [
