@@ -63,10 +63,10 @@
         "-w"
       ],
       "dependencies": {
-        "gRPC/C-Core": [
+        "gRPC-cpp/C-Core": [
 
         ],
-        "gRPC/RxLibrary": [
+        "gRPC-cpp/RxLibrary": [
 
         ]
       },
@@ -74,7 +74,7 @@
         "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Public/gRPC/include\""
       },
       "resource_bundles": {
-        "gRPC": [
+        "gRPC-cpp": [
           "etc/roots.pem"
         ]
       }
@@ -83,10 +83,10 @@
       "name": "ProtoRPC",
       "source_files": "src/objective-c/ProtoRPC/*.{h,m}",
       "dependencies": {
-        "gRPC/GRPCClient": [
+        "gRPC-cpp/GRPCClient": [
 
         ],
-        "gRPC/RxLibrary": [
+        "gRPC-cpp/RxLibrary": [
 
         ],
         "Protobuf": [
