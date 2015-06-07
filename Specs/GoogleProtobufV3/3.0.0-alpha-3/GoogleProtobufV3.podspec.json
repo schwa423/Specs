@@ -23,10 +23,10 @@
   ],
   "compiler_flags": "-D_THREAD_SAFE",
   "exclude_files": [
-    "src/**/compiler/cpp/**",
-    "src/**/compiler/python/**",
-    "src/**/compiler/java/**",
-    "src/**/compiler/**",
+    "src/google/protobuf/compiler/**",
+    "src/google/protobuf/compiler/**/**",
+    "src/google/protobuf/compiler/**/**",
+    "src/google/protobuf/stubs/stringprintf.{h,cc}",
     "src/**/*unittest*",
     "src/**/*test*",
     "src/*.pb.{h,cc}"
