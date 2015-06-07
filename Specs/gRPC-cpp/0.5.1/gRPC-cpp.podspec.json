@@ -81,7 +81,14 @@
     },
     {
       "name": "ProtoRPC",
-      "source_files": "src/objective-c/ProtoRPC/*.{h,m}",
+      "source_files": [
+        "src/objective-c/ProtoRPC/*.{h,m}",
+        "src/cpp/client/*.{h,cc}",
+        "src/cpp/common/*.{h,cc}",
+        "src/cpp/proto/*.{h,cc}",
+        "src/cpp/server/*.{h,cc}",
+        "src/cpp/util/*.{h,cc}"
+      ],
       "dependencies": {
         "gRPC-cpp/GRPCClient": [
 
