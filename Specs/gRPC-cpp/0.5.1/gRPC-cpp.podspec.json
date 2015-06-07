@@ -8,8 +8,8 @@
     "The gRPC contributors": "grpc-packages@google.com"
   },
   "source": {
-    "git": "https://github.com/grpc/grpc.git",
-    "tag": "release-0_9_1-objectivec-0.5.1"
+    "git": "https://github.com/schwa423/grpc.git",
+    "branch": "my_release-0_9_1-objectivec-0.5.1"
   },
   "platforms": {
     "ios": "6.0",
@@ -37,7 +37,7 @@
       "private_header_files": "src/core/**/*.h",
       "header_mappings_dir": ".",
       "xcconfig": {
-        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/gRPC\" \"$(PODS_ROOT)/Headers/Private/gRPC/include\""
+        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/gRPC-cpp\" \"$(PODS_ROOT)/Headers/Private/gRPC-cpp/include\""
       },
       "compiler_flags": [
         "-GCC_WARN_INHIBIT_ALL_WARNINGS",
@@ -71,7 +71,7 @@
         ]
       },
       "xcconfig": {
-        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Public/gRPC/include\""
+        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Public/gRPC-cpp/include\""
       },
       "resource_bundles": {
         "gRPC-cpp": [
