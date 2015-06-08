@@ -37,5 +37,5 @@
     "lib"
   ],
   "requires_arc": false,
-  "prepare_command": "./configure --prefix=\"$PWD\"; cd src; make google/protobuf/stubs/pbconfig.h"
+  "prepare_command": "sed -i '' '/googletest/d' src/google/protobuf/stubs/stringprintf.cc; ./configure --prefix=\"$PWD\"; cd src; make google/protobuf/stubs/pbconfig.h"
 }
