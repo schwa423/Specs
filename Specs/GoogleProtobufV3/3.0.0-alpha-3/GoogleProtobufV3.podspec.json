@@ -36,5 +36,5 @@
     "bin",
     "lib"
   ],
-  "requires_arc": false,
+  "requires_arc": false
 }
