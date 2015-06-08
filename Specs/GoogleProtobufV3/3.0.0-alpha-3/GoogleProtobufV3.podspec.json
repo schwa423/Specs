@@ -37,5 +37,5 @@
     "lib"
   ],
   "requires_arc": false,
-  "prepare_command": " (./configure --prefix=\"$PWD\").$$.tmp\"\n"
+  "prepare_command": "./configure --prefix=\"$PWD\""
 }
