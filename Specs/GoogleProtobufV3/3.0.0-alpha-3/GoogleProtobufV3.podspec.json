@@ -22,6 +22,7 @@
     "src/google/protobuf/**/*.{h,cc}"
   ],
   "compiler_flags": "-D_THREAD_SAFE",
+  "xcconfig": { "OTHER_LDFLAGS": "-lz" },
   "exclude_files": [
     "src/google/protobuf/compiler/**",
     "src/google/protobuf/compiler/**/**",
