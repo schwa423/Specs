@@ -17,7 +17,7 @@
   "requires_arc": false,
   "dependencies": {
     "GoogleProtobufV3": [],
-    "OpenSSL": ["~> 1.0.200"]
+    "OpenSSL": ["~> 1.0.201"]
   },
   "libraries": "z",
   "source_files": [
