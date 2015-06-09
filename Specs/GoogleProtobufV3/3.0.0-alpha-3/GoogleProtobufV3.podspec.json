@@ -30,7 +30,7 @@
     "src/**/*unittest*",
     "src/**/*_test*",
     "src/**/*test_*",
-    "src/*.pb.{h,cc}"
+    "src/google/protobuf/*.pb.{h,cc}"
   ],
   "header_mappings_dir": "src",
   "preserve_paths": [
