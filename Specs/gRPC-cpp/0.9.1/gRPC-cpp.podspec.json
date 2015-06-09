@@ -24,7 +24,11 @@
     "src/core/**/*.{h,c}",
     "src/core/**/**/*.{h,c}",
     "src/core/profiling/*.d",
-    "src/cpp/**/*.{h,cc}"
+    "src/cpp/**/*.{h,cc}",
+    "include/grpc/*.h",
+    "include/grpc/support/*.h",
+    "include/grpc++/*.h",
+    "include/grpc++/impl/*.h"
   ],
   "exclude_files": [
     "src/core/iomgr/*_linux.{h,c}",
@@ -32,7 +36,10 @@
     "src/core/security/*_win32.{h,c}",
     "src/core/support/*_linux.{h,c}",
     "src/core/support/*_windows.{h,c}",
-    "src/core/support/*_win32.{h,c}"
+    "src/core/support/*_win32.{h,c}",
+    "include/grpc/support/*_msvc.{h,c}",
+    "include/grpc/support/*_win32.{h,c}",
+    "include/grpc++/impl/*no_cxx11.h"
   ],
   "header_mappings_dir": "include"
 }
