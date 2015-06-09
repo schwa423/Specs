@@ -1,0 +1,38 @@
+{
+  "name": "gRPC-cpp",
+  "version": "0.9.1",
+  "summary": "gRPC client library for iOS/OSX",
+  "homepage": "http://www.grpc.io",
+  "license": "New BSD",
+  "authors": {
+    "The gRPC contributors": "grpc-packages@google.com"
+  },
+  "source": {
+    "http": "https://github.com/grpc/grpc/archive/release-0_9_1.tar.gz"
+  },
+  "platforms": {
+    "ios": "6.0",
+    "osx": "10.8"
+  },
+  "requires_arc": false,
+  "dependencies": {
+    "GoogleProtobufV3": [],
+    "OpenSSL": ["~> 1.0.200"]
+  },
+  "libraries": "z",
+  "source_files": [
+    "src/core/**/*.{h,c}",
+    "src/core/**/**/*.{h,c}",
+    "src/core/profiling/*.d",
+    "src/cpp/**/*.{h,cc}"
+  ],
+  "exclude_files": [
+    "src/core/iomgr/*_linux.{h,c}",
+    "src/core/iomgr/*_windows.{h,c}",
+    "src/core/security/*_win32.{h,c}",
+    "src/core/support/*_linux.{h,c}",
+    "src/core/support/*_windows.{h,c}",
+    "src/core/support/*_win32.{h,c}"
+  ],
+  "header_mappings_dir": "include"
+}
