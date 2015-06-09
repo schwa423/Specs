@@ -30,7 +30,10 @@
     "src/**/*unittest*",
     "src/**/*_test*",
     "src/**/*test_*",
-    "src/google/protobuf/*.pb.{h,cc}"
+    "src/google/protobuf/*.pb.{h,cc}",
+    "src/google/protobuf/stubs/*x86_msvc.{h,cc}",
+    "src/google/protobuf/stubs/*x86_msvc.{h,cc}",
+    "src/google/protobuf/stubs/*solaris.{h,cc}"
   ],
   "header_mappings_dir": "src",
   "preserve_paths": [
@@ -38,5 +41,5 @@
     "lib"
   ],
   "requires_arc": false,
-  "prepare_command": "sed -i '' '/googletest/d' src/google/protobuf/stubs/stringprintf.cc; ./configure --prefix=\"$PWD\"; cd src; make google/protobuf/stubs/pbconfig.h"
+  "prepare_command": "sed -i '' '/googletest/d' src/google/protobuf/stubs/stringprintf.cc; ./configure --prefix=\"$PWD\"; ./generate_descriptor_proto.sh; cd src; make google/protobuf/stubs/pbconfig.h"
 }

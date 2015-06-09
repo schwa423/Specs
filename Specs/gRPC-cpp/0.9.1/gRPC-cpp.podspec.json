@@ -25,6 +25,8 @@
     "src/core/**/**/*.{h,c}",
     "src/core/profiling/*.d",
     "src/cpp/**/*.{h,cc}",
+  ],
+  "public_header_files": [
     "include/grpc/*.h",
     "include/grpc/support/*.h",
     "include/grpc++/*.h",
