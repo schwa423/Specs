@@ -17,7 +17,7 @@
   "requires_arc": false,
   "dependencies": {
     "GoogleProtobufV3": [],
-    "OpenSSL": ["~> 1.0.201"]
+    "OpenSSL-for-iOS": ["~> 1.0.2.a.0"]
   },
   "libraries": "z",
   "source_files": [
