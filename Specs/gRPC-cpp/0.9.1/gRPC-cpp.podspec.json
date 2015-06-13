@@ -11,7 +11,7 @@
     "http": "https://github.com/grpc/grpc/archive/release-0_9_1.tar.gz"
   },
   "platforms": {
-    "ios": "6.0",
+    "ios": "7.0.3",
     "osx": "10.8"
   },
   "requires_arc": false,
