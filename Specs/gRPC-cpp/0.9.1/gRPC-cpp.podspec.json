@@ -27,14 +27,14 @@
     "src/cpp/**/*.{h,cc}",
     "include/grpc/*.h",
     "include/grpc/support/*.h",
-    "include/grpc++/*.h",
-    "include/grpc++/impl/*.h"
+    "include/grpc+++/*.h",
+    "include/grpc+++/impl/*.h"
   ],
   "public_header_files": [
     "include/grpc/*.h",
     "include/grpc/support/*.h",
-    "include/grpc++/*.h",
-    "include/grpc++/impl/*.h"
+    "include/grpc+++/*.h",
+    "include/grpc+++/impl/*.h"
   ],
   "exclude_files": [
     "src/core/iomgr/*_linux.{h,c}",
@@ -45,7 +45,7 @@
     "src/core/support/*_win32.{h,c}",
     "include/grpc/support/*_msvc.{h,c}",
     "include/grpc/support/*_win32.{h,c}",
-    "include/grpc++/impl/*no_cxx11.h"
+    "include/grpc+++/impl/*no_cxx11.h"
   ],
   "header_mappings_dir": "include"
 }
