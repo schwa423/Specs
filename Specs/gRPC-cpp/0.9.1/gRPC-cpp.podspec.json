@@ -24,7 +24,7 @@
     "src/core/**/*.{h,c}",
     "src/core/**/**/*.{h,c}",
     "src/core/profiling/*.d",
-    "src/cpp/**/*.{h,cc}",
+    "src/cpp+/**/*.{h,cc}",
     "include/grpc/*.h",
     "include/grpc/support/*.h",
     "include/grpc+++/*.h",
