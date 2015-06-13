@@ -30,7 +30,6 @@
     "src/**/*unittest*",
     "src/**/*_test*",
     "src/**/*test_*",
-    "src/google/protobuf/*.pb.{h,cc}",
     "src/google/protobuf/stubs/*x86_msvc.{h,cc}",
     "src/google/protobuf/stubs/*x86_msvc.{h,cc}",
     "src/google/protobuf/stubs/*solaris.{h,cc}"
