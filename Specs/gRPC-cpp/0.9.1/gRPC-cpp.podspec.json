@@ -50,7 +50,7 @@
   "xcconfig": {
     "CLANG_CXX_LANGUAGE_STANDARD": "c++14",
     "CLANG_CXX_LIBRARY": "libc++",
-    "USER_HEADER_SEARCH_PATHS": "${PODS_ROOT}/gRPC-cpp/include"
+    "HEADER_SEARCH_PATHS": "${PODS_ROOT}/gRPC-cpp/include"
   },
   "header_mappings_dir": "include"
 }
