@@ -40,13 +40,5 @@
     "lib"
   ],
   "requires_arc": false,
-  "xcconfig": {
-    "CLANG_CXX_LANGUAGE_STANDARD": "c++14",
-    "CLANG_CXX_LIBRARY": "libc++",
-    "HEADER_SEARCH_PATHS": [
-      "${PODS_ROOT}/Headers/Private/GoogleProtobufV3",
-      "${PODS_ROOT}/Headers/Public/GoogleProtobufV3"
-    ]
-  },
   "prepare_command": "sed -i '' '/googletest/d' src/google/protobuf/stubs/stringprintf.cc; ./configure --prefix=\"$PWD\"; ./generate_descriptor_proto.sh; cd src; make google/protobuf/stubs/pbconfig.h"
 }
