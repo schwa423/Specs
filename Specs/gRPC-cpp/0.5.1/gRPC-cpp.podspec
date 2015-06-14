@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.license  = 'New BSD'
   s.authors  = { 'The gRPC contributors' => 'grpc-packages@google.com' }
 
-  # s.source = { :git => 'https://github.com/grpc/grpc.git',
-  #              :tag => 'release-0_9_1-objectivec-0.5.1' }
+  s.source = { :git => 'https://github.com/grpc/grpc.git',
+               :tag => 'release-0_9_1-objectivec-0.5.1' }
 
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
