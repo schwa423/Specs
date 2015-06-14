@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'gRPC'
+  s.name     = 'gRPC-cpp'
   s.version  = '0.5.1'
   s.summary  = 'gRPC client library for iOS/OSX'
   s.homepage = 'http://www.grpc.io'
@@ -74,11 +74,24 @@ Pod::Spec.new do |s|
     gs.private_header_files = 'src/objective-c/GRPCClient/private/*.h'
     gs.compiler_flags = '-GCC_WARN_INHIBIT_ALL_WARNINGS', '-w'
 
-    gs.dependency 'gRPC/C-Core'
+    gs.dependency 'gRPC-cpp/C-Core'
     # TODO(jcanizales): Remove this when the prepare_command moves everything under "include/grpc"
     # one directory up.
     gs.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Public/gRPC/include"' }
-    gs.dependency 'gRPC/RxLibrary'
+    gs.dependency 'gRPC-cpp/RxLibrary'
+
+    # Certificates, to be able to establish TLS connections:
+    gs.resource_bundles = { 'gRPC' => ['etc/roots.pem'] }
+  end
+
+  # C++ wrapper around the core gRPC library.
+  s.subspec 'GRPCClient-cpp' do |gs|
+    gs.source_files = 'src/cpp/**/*.{h,cc}', 'include/grpc++/*.h', 'include/grpc++/impl/*.h'
+    gs.private_header_files = 'include/grpc++/impl/*.h'
+    gs.exclude_files = 'include/grpc++/impl/*no_cxx11.h'
+    gs.header_mappings_dir = '.'
+
+    gs.dependency 'gRPC-cpp/C-Core'
 
     # Certificates, to be able to establish TLS connections:
     gs.resource_bundles = { 'gRPC' => ['etc/roots.pem'] }
@@ -88,8 +101,8 @@ Pod::Spec.new do |s|
   s.subspec 'ProtoRPC' do |ps|
     ps.source_files = 'src/objective-c/ProtoRPC/*.{h,m}'
 
-    ps.dependency 'gRPC/GRPCClient'
-    ps.dependency 'gRPC/RxLibrary'
+    ps.dependency 'gRPC-cpp/GRPCClient'
+    ps.dependency 'gRPC-cpp/RxLibrary'
     ps.dependency 'Protobuf', '~> 3.0.0-alpha-3'
   end
 end
