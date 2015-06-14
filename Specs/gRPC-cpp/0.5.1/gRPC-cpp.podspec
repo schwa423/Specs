@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
     # TODO(jcanizales): Instead of doing this, during installation move everything under
     # "include/grpc" one directory up. The directory names under PODS_ROOT are implementation
     # details of Cocoapods, and have changed in the past, breaking this podspec.
-    cs.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Private/gRPC" ' +
-                                             '"$(PODS_ROOT)/Headers/Private/gRPC/include"' }
+    cs.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Private/gRPC-cpp" ' +
+                                             '"$(PODS_ROOT)/Headers/Private/gRPC-cpp/include"' }
     cs.compiler_flags = '-GCC_WARN_INHIBIT_ALL_WARNINGS', '-w'
 
     cs.requires_arc = false
@@ -77,11 +77,11 @@ Pod::Spec.new do |s|
     gs.dependency 'gRPC-cpp/C-Core'
     # TODO(jcanizales): Remove this when the prepare_command moves everything under "include/grpc"
     # one directory up.
-    gs.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Public/gRPC/include"' }
+    gs.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/Headers/Public/gRPC-cpp/include"' }
     gs.dependency 'gRPC-cpp/RxLibrary'
 
     # Certificates, to be able to establish TLS connections:
-    gs.resource_bundles = { 'gRPC' => ['etc/roots.pem'] }
+    gs.resource_bundles = { 'gRPC-cpp' => ['etc/roots.pem'] }
   end
 
   # C++ wrapper around the core gRPC library.
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
     gs.dependency 'gRPC-cpp/C-Core'
 
     # Certificates, to be able to establish TLS connections:
-    gs.resource_bundles = { 'gRPC' => ['etc/roots.pem'] }
+    gs.resource_bundles = { 'gRPC-cpp' => ['etc/roots.pem'] }
   end
 
   # RPC library for ProtocolBuffers, based on gRPC
