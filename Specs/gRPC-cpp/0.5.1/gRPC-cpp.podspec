@@ -85,17 +85,17 @@ Pod::Spec.new do |s|
   end
 
   # C++ wrapper around the core gRPC library.
-  s.subspec 'GRPCClient-cpp' do |gs|
-    gs.source_files = 'src/cpp/**/*.{h,cc}', 'include/grpc++/*.h', 'include/grpc++/impl/*.h'
-    gs.private_header_files = 'include/grpc++/impl/*.h'
-    gs.exclude_files = 'include/grpc++/impl/*no_cxx11.h'
-    gs.header_mappings_dir = '.'
+  # s.subspec 'GRPCClient-cpp' do |gs|
+  #   gs.source_files = 'src/cpp/**/*.{h,cc}', 'include/grpc++/*.h', 'include/grpc++/impl/*.h'
+  #   gs.private_header_files = 'include/grpc++/impl/*.h'
+  #   gs.exclude_files = 'include/grpc++/impl/*no_cxx11.h'
+  #   gs.header_mappings_dir = '.'
 
-    gs.dependency 'gRPC-cpp/C-Core'
+  #   gs.dependency 'gRPC-cpp/C-Core'
 
-    # Certificates, to be able to establish TLS connections:
-    gs.resource_bundles = { 'gRPC-cpp' => ['etc/roots.pem'] }
-  end
+  #   # Certificates, to be able to establish TLS connections:
+  #   gs.resource_bundles = { 'gRPC-cpp' => ['etc/roots.pem'] }
+  # end
 
   # RPC library for ProtocolBuffers, based on gRPC
   s.subspec 'ProtoRPC' do |ps|
